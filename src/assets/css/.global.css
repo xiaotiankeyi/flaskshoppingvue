@@ -6,3 +6,6 @@ html, body, #app{
 .el-breadcrumb{
     margin-bottom: 20px;
 }
+.el-editor{
+    height: 400px;
+}

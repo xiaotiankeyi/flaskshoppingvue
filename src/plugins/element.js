@@ -5,9 +5,15 @@ import {
   aside, main, Menu, MenuItemGroup, MenuItem, Submenu, Breadcrumb,
   BreadcrumbItem, Card, Row, Col, TableColumn, Table, Pagination,
   Dialog, Select, Option, Tag, Tree, Cascader, Steps, Step, Tabs,
-  TabPane, Alert
+  TabPane, Alert, Upload
 } from 'element-ui'
 import ZkTable from 'vue-table-with-tree-grid'
+
+import VueQuillEditor from 'vue-quill-editor'
+
+import 'quill/dist/quill.core.css' // import styles
+import 'quill/dist/quill.snow.css' // for snow theme
+import 'quill/dist/quill.bubble.css' // for bubble theme
 
 Vue.use(Button)
 Vue.use(Form)
@@ -40,6 +46,8 @@ Vue.use(Step)
 Vue.use(Tabs)
 Vue.use(TabPane)
 Vue.use(Alert)
+Vue.use(Upload)
+Vue.use(VueQuillEditor)
 
 Vue.component('tree-Table', ZkTable)
 Vue.prototype.$msg = Message
